@@ -1,4 +1,4 @@
-![epoch_1_samples](https://github.com/user-attachments/assets/931ee3c7-01b7-4416-a8e2-bf437dda32c7)# VQ-VAE
+
 
 
 Complex Computer Vision Project that consisted of training a VQ-VAE GAN from scratch to create AI Generated flowers.
