@@ -1,7 +1,6 @@
 # Intro 
-Complex Computer Vision Project that consisted of training a VQ-VAE GAN from scratch to create AI Generated flowers.
+Complex Computer Vision Project that consisted of training a VQ-VAE GAN from scratch to create AI-generated flowers.
 
-Here is the evolution of the model from various epochs. The image to the top is AI generated and to the bottom is what it should be.
 
 # Explanation of model
 
@@ -30,6 +29,8 @@ We randomly set the first token in the sequence and use the transformer to fill 
 
 
 # Images
+Here is the evolution of the model from various epochs. The image to the top is AI generated and to the bottom is what it should be.
+
 Epoch 1
 \\
 ![epoch_1_ours2](https://github.com/user-attachments/assets/1b311e1d-ee8a-4dc6-8e98-c40a36055f9d)
