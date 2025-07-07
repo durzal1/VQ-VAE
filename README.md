@@ -1,10 +1,35 @@
-
-
-
+#Intro 
 Complex Computer Vision Project that consisted of training a VQ-VAE GAN from scratch to create AI Generated flowers.
 
 Here is the evolution of the model from various epochs. The image to the top is AI generated and to the bottom is what it should be.
 
+#Explanation of model
+
+1. VQ-VAE learns discrete representations
+
+The Encoder compresses the input image (flower) into a grid of discrete tokens to use in a learned codebook.
+These tokens are quantized representations of the input (flower) and describe a piece of what a flower is. These, combined, make up the AI-generated flower. 
+
+Then, the decoder reconstructs the image using these tokens from the codebook.
+
+2. GAN. Enhancing the image.
+
+These generated image are given to the discriminator which decided if the image is real or AI generated.
+This adversarial training enhances the quality of the VQ-VAE (generator) to produce sharper images.
+
+3. Combining it together.
+
+These two elements together make up the VQ-VAE GAN. When tried with an adequate dataset with enough time it is capable of recreating those images from scratch. 
+
+4. Unique Images with transformers 
+
+To make unique AI-generated images, we can implement a transformer (pre-trained GP2 model) and fine-tune it with tokens generated using the dataset. The transformer learns how to create a coherent set of quantized tokens to create a beautiful image. 
+We randomly set the first token in the sequence and use the transformer to fill in the rest. We then feed this into the VQ-VAE, and the final result is a unique AI-generated flower. 
+
+
+
+
+# Images
 Epoch 1
 \\
 ![epoch_1_ours2](https://github.com/user-attachments/assets/1b311e1d-ee8a-4dc6-8e98-c40a36055f9d)
