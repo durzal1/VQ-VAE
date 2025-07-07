@@ -1,9 +1,9 @@
-#Intro 
+# Intro 
 Complex Computer Vision Project that consisted of training a VQ-VAE GAN from scratch to create AI Generated flowers.
 
 Here is the evolution of the model from various epochs. The image to the top is AI generated and to the bottom is what it should be.
 
-#Explanation of model
+# Explanation of model
 
 1. VQ-VAE learns discrete representations
 
