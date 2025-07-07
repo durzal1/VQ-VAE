@@ -22,7 +22,7 @@ These two elements together make up the VQ-VAE GAN. When tried with an adequate 
 
 4. Unique Images with transformers 
 
-To make unique AI-generated images, we can implement a transformer (pre-trained GP2 model) and fine-tune it with tokens generated using the dataset. The transformer learns how to create a coherent set of quantized tokens to create a beautiful image. 
+To make unique AI-generated images, we can implement a transformer (pre-trained GPT2 model) and fine-tune it with tokens generated using the dataset. The transformer learns how to create a coherent set of quantized tokens to create a beautiful image. 
 We randomly set the first token in the sequence and use the transformer to fill in the rest. We then feed this into the VQ-VAE, and the final result is a unique AI-generated flower. 
 
 
